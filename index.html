@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Link Sosial Media</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(image.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        h1 {
+            font-family: 'Shadows Into Light', sans-serif;
+            font-size: 55px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.37);
+            margin: 10px 0;
+            color: #6a0dad;
+        }
+        p {
+            color: #555;
+            font-size: 14px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #4c0780;
+            transform: scale(1.1);
+        }
+        .links a {
+            display: block;
+            text-decoration: none;
+            border: 2px solid #6a0dad;
+            border-right: 8px solid #6a0dad;
+            border-bottom: 9px solid #6a0dad;
+            color: #000;
+            padding: 10px;
+            margin: 10px 10px;
+            border-radius: 0px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .links a:hover {
+            background: #6a0dad;
+            border: 1px solid #6a0dad;
+            color: #fff;
+        }
+        .copyright {
+          margin: 40px;
+          font-size: 12px;
+        }
+        .copyright a {
+          font-weight: 700;
+          text-decoration: none;
+          color: #000;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+                width: calc(100% - 60px);
+                margin: 0 auto;
+            }
+            .profile img {
+                width: 120px;
+                height: 120px;
+            }
+            h1 {
+                font-size: 40px;
+            }
+            .social-icons a {
+                font-size: 20px;
+            }
+            .links a {
+                font-size: 14px;
+                padding: 8px;
+                margin: 10px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="logo.png" alt="Foto Profil">
+        </div>
+        <h1>Welcome</h1>
+        <p>Designer Figma | UI/UX | Website Design</p>
+        <div class="social-icons">
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40novicedesigner.id%3F_t%3DZS-8u3xI4Emcpr%26_r%3D1%26fbclid%3DPAZXh0bgNhZW0CMTEAAaaGDoKQht8ibT0JuBCu41ceMQ1xFX13Uij-wuU487HsfB5i9lgJorDOsR8_aem_o_TofgJnuWVNrq5X6kG2EQ&e=AT3zLLtOKBHdoIXHRwrqn_heugNbTAoo-MIs2iHwUdjqX9wWd1WdDFYo-M7dmvjsfUgSyg8WUvNpE6uO5tVerFLJ3kL6weZIKOJf9w"><i class="ri-instagram-line"></i></a>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40novicedesigner.id%3F_t%3DZS-8u3xI4Emcpr%26_r%3D1%26fbclid%3DPAZXh0bgNhZW0CMTEAAaaGDoKQht8ibT0JuBCu41ceMQ1xFX13Uij-wuU487HsfB5i9lgJorDOsR8_aem_o_TofgJnuWVNrq5X6kG2EQ&e=AT3zLLtOKBHdoIXHRwrqn_heugNbTAoo-MIs2iHwUdjqX9wWd1WdDFYo-M7dmvjsfUgSyg8WUvNpE6uO5tVerFLJ3kL6weZIKOJf9w"><i class="ri-tiktok-line"></i></a>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Friyantofebrian26%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaZtjzIi2ZA6bxr7wsjqmo35JnW03JmVl7WF9BMTeOlC0iwY312j8xDPYEI_aem_LEpndI9YPW1ykfXKNjL7ag&e=AT3W5dz6U1Si7ZEHjCnArCmShSumWR3xDb8P7y3zdEhsQMi7ctrGFCD43awH3GZvD4GcUJGz72oLLzUjElWrF8bm-rWRC_pU_6KjNQ"><i class="ri-linkedin-box-line"></i></a>
+        </div>
+        <div class="links">
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Friyantofebrian.vercel.app%2F%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaYPszT1YQsIYGgZ-b_dpfSCKKMYQNope6Gtjs9VnHWZCdhbFP50Gz1uiTI_aem_NBLnVvm11srmMOs6GBhPYQ&e=AT2UQbLz2Y6XdL36ciNkbKKULmb-ORK8DCWPZ1IplLqerftPy22vahmz7zpoA7Q4XEzU1G_JoGI9_GbmBy9O49j5W-EngGb3bqnQNg">Portfolio</a>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Friyantofebrian26%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaZtjzIi2ZA6bxr7wsjqmo35JnW03JmVl7WF9BMTeOlC0iwY312j8xDPYEI_aem_LEpndI9YPW1ykfXKNjL7ag&e=AT3W5dz6U1Si7ZEHjCnArCmShSumWR3xDb8P7y3zdEhsQMi7ctrGFCD43awH3GZvD4GcUJGz72oLLzUjElWrF8bm-rWRC_pU_6KjNQ">LinkedIn</a>
+            <a href="https://www.instagram.com/novicedesigner.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram Novice Designer</a>
+            <a href="https://www.instagram.com/valdnieks_/?igsh=MWc0N240cG8wb3FnZg%3D%3D&fbclid=PAZXh0bgNhZW0CMTEAAaZRQg3fG0vmzs96W4yPuLUlRibQfJiPJAqWZzgcaivrKSpG9_24YqNNOkw_aem_OluxQ8TveYTI_uoarD1UXA">Instagram Riyanto Febrian</a>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40novicedesigner.id%3F_t%3DZS-8u3xI4Emcpr%26_r%3D1%26fbclid%3DPAZXh0bgNhZW0CMTEAAaaGDoKQht8ibT0JuBCu41ceMQ1xFX13Uij-wuU487HsfB5i9lgJorDOsR8_aem_o_TofgJnuWVNrq5X6kG2EQ&e=AT3zLLtOKBHdoIXHRwrqn_heugNbTAoo-MIs2iHwUdjqX9wWd1WdDFYo-M7dmvjsfUgSyg8WUvNpE6uO5tVerFLJ3kL6weZIKOJf9w">Tiktok Novice Designer</a>
+            <a href="https://wa.me/6285691073818">Kontak Saya</a>
+        </div>
+        <p class="copyright">
+          &copy; 2024
+          <a href="">Riyanto Pebrian</a>.
+          All Rights Reserved.
+        </p>
+
+    </div>
+    
+</body>
+</html>
