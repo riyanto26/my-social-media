@@ -1,162 +1,195 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>Link Sosial Media</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            background-image: url(image.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background: #fff;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 400px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+      }
+      .profile img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+      h1 {
+        font-family: "Shadows Into Light", sans-serif;
+        font-size: 55px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.37);
+        margin: 10px 0;
+        color: #6a0dad;
+      }
+      p {
+        color: #555;
+        font-size: 14px;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+      .social-icons a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #333;
+        transition: all 0.3s ease;
+      }
+      .social-icons a:hover {
+        color: #4c0780;
+        transform: scale(1.1);
+      }
+      .links a {
+        display: block;
+        text-decoration: none;
+        border: 2px solid #6a0dad;
+        border-right: 8px solid #6a0dad;
+        border-bottom: 9px solid #6a0dad;
+        color: #000;
+        padding: 10px;
+        margin: 10px 10px;
+        border-radius: 0px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+      .links a:hover {
+        background: #6a0dad;
+        border: 1px solid #6a0dad;
+        color: #fff;
+      }
+      .copyright {
+        margin: 40px;
+        font-size: 12px;
+      }
+      .copyright a {
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+      }
+
+      @media (max-width: 480px) {
         .container {
-            background: #fff;
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 400px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+          padding: 15px;
+          width: calc(100% - 60px);
+          margin: 0 auto;
         }
         .profile img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+          width: 120px;
+          height: 120px;
         }
         h1 {
-            font-family: 'Shadows Into Light', sans-serif;
-            font-size: 55px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.37);
-            margin: 10px 0;
-            color: #6a0dad;
+          font-size: 40px;
         }
         p {
-            color: #555;
-            font-size: 14px;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 15px;
+          color: #555;
+          font-size: 10px;
         }
         .social-icons a {
-            text-decoration: none;
-            font-size: 20px;
-            color: #333;
-            transition: all 0.3s ease;
-        }
-        .social-icons a:hover {
-            color: #4c0780;
-            transform: scale(1.1);
+          font-size: 20px;
         }
         .links a {
-            display: block;
-            text-decoration: none;
-            border: 2px solid #6a0dad;
-            border-right: 8px solid #6a0dad;
-            border-bottom: 9px solid #6a0dad;
-            color: #000;
-            padding: 10px;
-            margin: 10px 10px;
-            border-radius: 0px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-        .links a:hover {
-            background: #6a0dad;
-            border: 1px solid #6a0dad;
-            color: #fff;
+          font-size: 12px;
+          padding: 6px;
+          margin: 8px 10px;
         }
         .copyright {
-          margin: 40px;
-          font-size: 12px;
+          margin: 20px;
+          font-size: 8px;
         }
-        .copyright a {
-          font-weight: 700;
-          text-decoration: none;
-          color: #000;
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 15px;
-                width: calc(100% - 60px);
-                margin: 0 auto;
-            }
-            .profile img {
-                width: 120px;
-                height: 120px;
-            }
-            h1 {
-                font-size: 40px;
-            }
-            p {
-            color: #555;
-            font-size: 10px;
-            }
-            .social-icons a {
-                font-size: 20px;
-            }
-            .links a {
-                font-size: 12px;
-                padding: 6px;
-                margin: 8px 10px;
-            }
-            .copyright {
-              margin: 20px;
-              font-size: 8px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="profile">
-            <img src="logo.png" alt="Foto Profil">
-        </div>
-        <h1>Welcome</h1>
-        <p>I am a | Figma Designer | UI/UX | Website Design</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/novicedesigner.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="ri-instagram-line"></i></a>
-            <a href="https://wa.me/6283863964363"><i class="ri-whatsapp-line"></i></a>
-            <a href="https://github.com/riyanto26"><i class="ri-github-line"></i></a>
-            <a href="https://www.tiktok.com/@novicedesigner.id?is_from_webapp=1&sender_device=pc"><i class="ri-tiktok-line"></i></a>
-            <a href="https://www.linkedin.com/in/riyantofebrian26?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BF%2F3kGouMSVmOtD1Fqd1OJA%3D%3D"><i class="ri-linkedin-box-line"></i></a>
-            <a href="https://youtube.com/@novicedesigner_id?si=FLtfFlJn33cAvrH5"><i class="ri-youtube-line"></i></a>
-        </div>
-        <div class="links">
-            <a href="https://riyantofebrian.vercel.app/">Portfolio</a>
-            <a href="https://youtube.com/@novicedesigner_id?si=FLtfFlJn33cAvrH5">Youtube</a>
-            <a href="https://www.instagram.com/novicedesigner.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram Novice Designer</a>
-            <a href="https://www.instagram.com/riyantofebrian/profilecard/?igsh=MWc0N240cG8wb3FnZg==">Instagram Riyanto Pebrian</a>
-            <a href="https://www.tiktok.com/@novicedesigner.id?is_from_webapp=1&sender_device=pc">Tiktok Novice Designer</a>
-            <a href="https://www.linkedin.com/in/riyantofebrian26?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BF%2F3kGouMSVmOtD1Fqd1OJA%3D%3D">LinkedIn</a>
-            <a href="https://wa.me/6283863964363">Contact Me</a>
-        </div>
-        <p class="copyright">
-          &copy; 2025
-          <a href="">Riyanto Pebrian</a>.
-          All Rights Reserved.
-        </p>
-
+      <div class="profile">
+        <img src="logo.png" alt="Foto Profil" />
+      </div>
+      <h1>Welcome</h1>
+      <p>I am a | Figma Designer | UI/UX | Website Design</p>
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/novicedesigner.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          ><i class="ri-instagram-line"></i
+        ></a>
+        <a href="https://wa.me/6283863964363"
+          ><i class="ri-whatsapp-line"></i
+        ></a>
+        <a href="https://github.com/riyanto26"
+          ><i class="ri-github-line"></i
+        ></a>
+        <a
+          href="https://www.tiktok.com/@novicedesigner.id?is_from_webapp=1&sender_device=pc"
+          ><i class="ri-tiktok-line"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/riyantofebrian26?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BF%2F3kGouMSVmOtD1Fqd1OJA%3D%3D"
+          ><i class="ri-linkedin-box-line"></i
+        ></a>
+        <a href="https://youtube.com/@novicedesigner_id?si=FLtfFlJn33cAvrH5"
+          ><i class="ri-youtube-line"></i
+        ></a>
+      </div>
+      <div class="links">
+        <a href="https://saweria.co/novicedesigner">Saweria</a>
+        <a href="https://riyantofebrian.vercel.app/">Portfolio</a>
+        <a href="https://youtube.com/@novicedesigner_id?si=FLtfFlJn33cAvrH5"
+          >Youtube</a
+        >
+        <a
+          href="https://www.instagram.com/novicedesigner.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          >Instagram Novice Designer</a
+        >
+        <a
+          href="https://www.instagram.com/riyantofebrian/profilecard/?igsh=MWc0N240cG8wb3FnZg=="
+          >Instagram Riyanto Pebrian</a
+        >
+        <a
+          href="https://www.tiktok.com/@novicedesigner.id?is_from_webapp=1&sender_device=pc"
+          >Tiktok Novice Designer</a
+        >
+        <a
+          href="https://www.linkedin.com/in/riyantofebrian26?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BF%2F3kGouMSVmOtD1Fqd1OJA%3D%3D"
+          >LinkedIn</a
+        >
+        <a href="https://wa.me/6283863964363">Contact Me</a>
+      </div>
+      <p class="copyright">
+        &copy; 2025
+        <a href="">Riyanto Pebrian</a>. All Rights Reserved.
+      </p>
     </div>
-    
-</body>
+  </body>
 </html>
